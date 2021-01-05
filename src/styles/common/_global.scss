@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+
+  text-decoration: none;
+}
+
+img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  font: inherit;
+
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input[type='button'] {
+  padding: 0;
+
+  cursor: pointer;
+}
+
+button {
+  font: inherit;
+
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  outline: none;
+  background: none;
+}
+
+html {
+  @include media-tablet-lg {
+    font-size: 58%;
+  }
+
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 1.6em;
+
+  margin: 0;
+
+  color: $color-secondary-light;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+.scroll-hidden {
+  overflow: hidden;
+
+  height: 100%;
+}

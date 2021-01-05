@@ -1,0 +1,67 @@
+.recipes {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recipe {
+  @include media-tablet-sm {
+    width: 100%;
+  }
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 49%;
+  margin-bottom: 4rem;
+
+  &__title {
+    font-weight: 500;
+
+    margin-bottom: 1rem;
+
+    text-align: center;
+  }
+
+  &__calories {
+    font-size: 1.8rem;
+
+    margin-bottom: 1rem;
+  }
+
+  &__ingredients {
+    font-size: 1.9rem;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+
+    color: $color-primary-dark;
+
+    li::before {
+      font-weight: 700;
+
+      display: inline-block;
+
+      width: 1em;
+
+      content: '\2022';
+
+      color: $color-secondary-light;
+    }
+  }
+
+  &__img {
+    max-width: 25rem;
+    margin-bottom: 1rem;
+
+    border-radius: 50%;
+    box-shadow: 0 0 2px 0 #000;
+  }
+}
